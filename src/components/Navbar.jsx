@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/logo 1.png';
+import cart from '../assets/icons/cart-svgrepo-com 1.png';
+import search from '../assets/icons/magnifying-glass-solid.svg';
 
 const Navbar = () => {
     return (
@@ -12,10 +14,10 @@ const Navbar = () => {
             <div className="nav-links">
                 <a href="#" className="nav-link">Categories</a>
                 <a href="#" className="nav-link">
-                    <p className="cart-icon"> Cart <i icon="fa-solid fa-cart-shopping"></i>
+                    <p className="cart-icon"> Cart <img src={cart} alt="cart" />
                     </p>
                 </a>
-                <button href="#" className="nav-link"><i icon="fa-solid fa-magnifying-glass"></i></button>
+                <div href="#" className="searcher"><img src= {search} alt="" /></div>
             </div>
             <div className="connect-wallet">
                 <button className="connect-button">Connect Wallet</button>
