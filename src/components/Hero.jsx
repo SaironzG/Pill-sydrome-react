@@ -7,6 +7,7 @@ const Hero = () => {
             <div className="hero-content">
                 <h1>Pill Syndrome is a collection of NFTs that aims to collaborate</h1>
             </div>
+            
             <div className="hero-image">
             <div className="grid">
 

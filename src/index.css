@@ -2,7 +2,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Poppins;
+            font-family: Poppins, sans-serif;
             background-color: #000000;
             color: #fff;
         }
@@ -194,8 +194,6 @@
             display: flex;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 7px;
-            width: 100%;
-            height: 100%;
         }
         
         .grid-item1 {
@@ -211,6 +209,7 @@
             -moz-transition: 1s;
             -ms-transition: 1s;
             -o-transition: 1s;
+            flex: 1;
         }
         
         .grid-item2 {
@@ -220,6 +219,7 @@
             border: 2px solid #000;
             position: relative;
             margin-top: 7px;
+            flex: 1;
         }
         
         .grid-item3 {
@@ -321,9 +321,13 @@
         
         .grid-item2:hover {
             background-color: #DAA520;
-            /* GoldenRod */
+            /*GoldenRod*/
             transform: scale(1.1);
             transition: transform 0.3s, background-color 0.3s;
+            -webkit-transition: transform 0.3s, background-color 0.3s;
+            -moz-transition: transform 0.3s, background-color 0.3s;
+            -ms-transition: transform 0.3s, background-color 0.3s;
+            -o-transition: transform 0.3s, background-color 0.3s;
         }
         
         .grid-item3:hover {
@@ -744,6 +748,133 @@
             text-align: center;
         }
         
+        .categories-container {
+            text-align: center;
+            color: white;
+            background-color: #111;
+            padding: 20px 40px;
+        }
+        
+        .categories-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        .tabs span {
+            cursor: pointer;
+            color: #888;
+            position: relative;
+        }
+        
+        .active-tab {
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        .active-tab::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .product-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .product-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+        .product-card p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        
+        .price {
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        .price-info {
+            color: yellow;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        
+        .quantity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .quantity-button {
+            background: #444;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        .quantity-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .buy-button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        
         @media (max-width: 1115px) {
             .hero-container {
                 flex-direction: column;
@@ -814,6 +945,10 @@
                 flex-direction: column;
                 padding: 0;
                 text-align: center;
+            }
+            .products-container {
+                justify-content: center;
+                align-items: center;
             }
         }
         

@@ -12,7 +12,7 @@ const Navbar = () => {
 
             <div className='selectors'>
             <div className="nav-links">
-                <a href="#" className="nav-link">Categories</a>
+                <a href="Categories" className="nav-link" id=''>Categories</a>
                 <a href="#" className="nav-link">
                     <p className="cart-icon"> Cart <img src={cart} alt="cart" />
                     </p>
