@@ -14,7 +14,7 @@ const Merch = () => {
         <button className="wallet-button">Connect Wallet</button>
       </div>
       <div className="merch-image">
-      <img src={jars} alt="" />
+      <img src={jars} alt="Merchandise Image" />
       </div>
     </div>
   );
